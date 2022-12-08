@@ -2,8 +2,10 @@ public class Manusia {
     public String merk;
     public Phone mesin;
 
-    public Manusia(Phone p) {
-        mesin = p;
+    public Manusia(String merkMesin, int volume) {
+        mesin = new Phone();
+        mesin.merk = merkMesin;
+        mesin.volume = volume;
     }
 
     public void powerOn() {
